@@ -1,0 +1,103 @@
+// -----------------------------------------------------------------------------
+// This file contains very basic styles.
+// -----------------------------------------------------------------------------
+:root {
+    font-size: 62.5%;
+}
+html {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+    &.is-locked {
+        overflow: hidden;
+        & body {
+            position: absolute;
+            width: 100%;
+            top: 0;
+            left: 0;
+            overflow: hidden;
+        }
+    }
+}
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+b, strong {
+    @include font-weight('bold');
+}
+body {
+    @include font();
+    @include font-weight('normal');
+    color: $black;
+    font-size: 1.6rem;
+    height: 100%;
+    background: $white;
+}
+button {
+    @include font();
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    padding: 0;
+    margin: 0;
+    outline-style: none;
+    outline-color: transparent;
+    box-shadow: none;
+    border-radius: 0;
+    color: $black;
+}
+select {
+    @extend button;
+}
+input {
+    @extend button;
+    cursor: text;
+    padding: 0 15px;
+}
+textarea {
+    @extend button;
+    cursor: text;
+    resize: none;
+}
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+::-webkit-input-placeholder {
+    font-size: 1.6rem;
+}
+::-moz-placeholder {
+    font-size: 1.6rem;
+    opacity: 1;
+}
+:-moz-placeholder {
+    font-size: 1.6rem;
+    opacity: 1;
+}
+:-ms-input-placeholder {
+    font-size: 1.6rem;
+}
+:focus::-webkit-input-placeholder {
+    color: transparent;
+}
+:focus::-moz-placeholder {
+    color: transparent;
+}
+:focus:-moz-placeholder {
+    color: transparent;
+}
+:focus::-ms-input-placeholder {
+    color: transparent;
+}
+
