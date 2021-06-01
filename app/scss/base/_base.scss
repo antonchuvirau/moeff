@@ -26,11 +26,10 @@ html {
     box-sizing: border-box;
 }
 b, strong {
-    @include font-weight('bold');
+    font-weight: bold;
 }
 body {
     @include font();
-    @include font-weight('normal');
     color: $black;
     font-size: 1.6rem;
     height: 100%;

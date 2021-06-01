@@ -1,0 +1,115 @@
+.footer {
+    background: rgba($secondary, .5);
+    &__wrapper {
+        padding: 60px 0;
+        padding-bottom: 50px;
+    }
+    &__logo {
+        margin-bottom: 40px;
+    }
+    &__navigation {
+        @include flex();
+    }
+    &__col {
+        @include flex(column);
+        &-name {
+            font-size: 1.4rem;
+            color: $dark;
+            font-weight: bold;
+            text-transform: uppercase;
+            line-height: 1.5;
+            margin-bottom: 15px;
+        }
+        &-grid {
+            @include flex(column);
+            & p {
+                margin: 0;
+                font-size: 1.4rem;
+                line-height: 1.45;
+                color: $black;
+                &:not(:last-child) {
+                    margin-bottom: 5px;
+                }
+            }
+            & a {
+                text-decoration: none;
+                color: $black;
+                line-height: 1.55;
+                font-size: 1.4rem;
+                &:not(:last-child) {
+                    margin-bottom: 5px;
+                }
+                &:hover {
+                    opacity: .85;
+                }
+            }
+        }
+        &:not(:last-child) {
+            margin-right: 60px;
+        }
+    }
+    &__text {
+        margin: 0;
+        font-size: 1.4rem;
+        line-height: 1.35;
+        color: $black;
+        margin-top: 40px;
+        &_align {
+            &-r {
+                text-align: right;
+            }
+        }
+        & a {
+            color: $black;
+            &:hover {
+                opacity: .85;
+            }
+        }
+    }
+    &__social-link {
+        position: relative;
+        font-size: 1.4rem;
+        text-decoration: none;
+        color: $dark;
+        padding-left: 40px;
+        &::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 50%;
+            margin-top: -12.5px;
+            width: 25px;
+            height: 25px;
+            background: icon('icon-instagram.svg') no-repeat 50% / 25px auto;
+        }
+        &:hover {
+            opacity: .85;
+        }
+    }
+    &__search {
+        &-form {
+            position: relative;
+            &-input {
+                width: 100%;
+                height: 40px;
+                border: 1px solid $secondary-500;
+                border-radius: 3px;
+                padding-left: 40px;
+                &:focus {
+                    border-color: darken($secondary-500, 5%);
+                }
+            }
+            &-button {
+                position: absolute;
+                width: 20px;
+                height: 20px;
+                top: 50%;
+                left: 10px;
+                margin-top: -10px;
+            }
+        }
+        &:not(:last-child) {
+            margin-bottom: 40px;
+        }
+    }
+}
