@@ -36,3 +36,12 @@
     font-style: normal;
     font-display: swap;
 }
+
+@font-face {
+    font-family: 'Montserrat';
+    src: font('Montserrat-ExtraBold.woff2') format('woff2'),
+        font('Montserrat-ExtraBold.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}

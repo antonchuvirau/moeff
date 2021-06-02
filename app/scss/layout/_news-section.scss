@@ -1,0 +1,9 @@
+.news-section {
+    @include flex();
+    &__item {
+        width: calc((100% - 30px) / 2);
+        &:not(:last-child) {
+            margin-right: 30px;
+        }
+    }
+}

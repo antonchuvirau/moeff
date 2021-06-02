@@ -41,7 +41,8 @@
 
 // 2. Vendors
 @import
-  'vendors/normalize';
+  'vendors/normalize',
+  'vendors/swiperjs';
 
 // 3. Base stuff
 @import
@@ -53,11 +54,19 @@
 // 4. Layout-related sections
 @import
   'layout/header',
-  'layout/footer';
+  'layout/footer',
+  'layout/main',
+  'layout/section',
+  'layout/news-section';
 
 // 5. Components
 @import
-  'components/button';
+  'components/button',
+  'components/hero',
+  'components/swiper-pagination',
+  'components/product-item',
+  'components/video-section',
+  'components/news-item';
 
 // 6. Page-specific styles
 @import

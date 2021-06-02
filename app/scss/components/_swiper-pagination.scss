@@ -1,0 +1,17 @@
+.swiper-pagination {
+    &-bullet {
+        width: 11px;
+        height: 11px;
+        border-radius: 50%;
+        border: 1px solid $white;
+        background: none;
+        opacity: 1;
+        &:not(:last-child) {
+            margin-right: 15px;
+        }
+        &-active {
+            background: $primary;
+            border-color: $primary;
+        }
+    }
+}

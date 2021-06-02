@@ -1,0 +1,24 @@
+.section {
+    &__title {
+        margin: 0;
+        font-size: 2.4rem;
+        font-weight: bold;
+        letter-spacing: .05em;
+        line-height: 1.35;
+        color: $dark;
+        margin-bottom: 1em;
+        &_size {
+            &-m {
+                font-size: 2rem;
+            }
+        }
+    }
+    &__grid {
+        &-product {
+            height: 100%;
+        }
+        &-col {
+            margin-bottom: 35px;
+        }
+    }
+}
