@@ -9,6 +9,26 @@
     transform: translate3d(100%, 0, 0);
     transition: transform .65s ease;
     z-index: 10;
+    &__section {
+        @include flex(column, flex-end);
+        padding: 40px 0;
+        padding-right: 130px;
+        text-align: right;
+        &:first-child {
+            padding-top: 160px;
+        }
+        &-link {
+            color: $white;
+            text-decoration: none;
+        }
+    }
+    &__link {
+        color: $white;
+        text-decoration: none;
+        &-value {
+            display: block;
+        }
+    }
     &_opened {
         transform: none;
     }
