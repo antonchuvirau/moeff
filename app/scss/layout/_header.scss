@@ -51,6 +51,8 @@
             }
         }
         &-menu {
+            position: relative;
+            z-index: 11;
             &-icon {
                 position: relative;
                 @include flex(column, flex-start, center);
@@ -73,7 +75,8 @@
                 border-radius: 10px;
                 height: 2px;
                 margin: 4px 0;
-                transition: .4s  cubic-bezier(0.68, -0.6, 0.32, 1.6);
+                // transition: .4s  cubic-bezier(0.68, -0.6, 0.32, 1.6);
+                transition: .45s ease;
                 flex-shrink: 0;
                 &:nth-of-type(1){
                     width: 15px;
@@ -99,6 +102,22 @@
                     transform-origin: top;
                     width: 15px;
                     transform: translate(14px, -5px) rotatez(45deg);
+                }
+            }
+            &_active {
+                & .header {
+                    &__button {
+                        &-menu {
+                            &-icon {
+                                &::after {
+                                    color: $white;
+                                }
+                            }
+                            &-line {
+                                background: $white;
+                            }
+                        }
+                    }
                 }
             }
         }

@@ -3,6 +3,22 @@
 const heroCarouselElement = document.querySelector(`.hero__carousel-box`);
 const productGalleryElement = document.querySelector(`.product-details__gallery-box`);
 const productThumbsElement = document.querySelector(`.product-details__thumbs-box`);
+const openMenuButton = document.querySelector(`.header__button-menu-input`);
+const offcanvasMenuElement = document.querySelector(`.offcanvas-menu`);
+const documentElement = document.documentElement;
+
+function onOpenMenuButtonClickHandler() {
+    if (openMenuButton.checked) {
+        openMenuButton.closest(`.header__button-menu`).classList.add(`header__button-menu_active`);
+        offcanvasMenuElement.classList.add(`offcanvas-menu_opened`);
+        documentElement.classList.add(`is-locked`);
+    }
+    else {
+        openMenuButton.closest(`.header__button-menu`).classList.remove(`header__button-menu_active`);
+        offcanvasMenuElement.classList.remove(`offcanvas-menu_opened`);
+        documentElement.classList.remove(`is-locked`); 
+    }
+}
 
 document.addEventListener(`DOMContentLoaded`, () => {
     if (heroCarouselElement) {
@@ -30,5 +46,8 @@ document.addEventListener(`DOMContentLoaded`, () => {
                 }
             }
         });
+    }
+    if (openMenuButton) {
+        openMenuButton.addEventListener(`click`, onOpenMenuButtonClickHandler);
     }
 });

@@ -1,0 +1,15 @@
+.offcanvas-menu {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    max-width: 570px;
+    height: 100vh;
+    background: $primary;
+    transform: translate3d(100%, 0, 0);
+    transition: transform .65s ease;
+    z-index: 10;
+    &_opened {
+        transform: none;
+    }
+}
