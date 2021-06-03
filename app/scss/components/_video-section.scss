@@ -21,6 +21,9 @@
             pointer-events: none;
             z-index: 1;
         }
+        &:hover {
+            opacity: .85;
+        }
     }
     &__note {
         position: relative;

@@ -67,7 +67,158 @@
     </header>
     <!-- End header -->
     <!-- Begin main -->
-    <main class="main"></main>
+    <main class="main template basket-template">
+        <div class="template__wrapper">
+            <div class="breadcrumbs template__breadcrumbs">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="breadcrumbs__list">
+                                <a href="#" class="breadcrumbs__link">Главная</a>
+                                /
+                                <a title="Текущая позиция" class="breadcrumbs__link">Ваш заказ</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="template__grid basket-template__grid">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12">
+                            <h1 class="template__title basket-template__title">Оформление заказа</h1>
+                            <div class="template__container basket-template__container">
+                                <div class="row">
+                                    <div class="col-6 basket-template__col">
+                                        <div class="basket-prodcuts basket-template__products">
+                                            <span class="basket-template__col-name">Выбранные товары</span>
+                                            <div class="basket-products__list">
+                                                <div class="basket-product basket-products__list-item">
+                                                    <a href="#" class="basket-product__media">
+                                                        <img class="basket-product__media-img"  src="img/product-item.png" srcset="img/product-item.png 1x, img/product-item@2x.png 2x" alt="alt">
+                                                    </a>
+                                                    <div class="basket-product__grid">
+                                                        <a href="#" class="basket-product__name">MF-121-Раковина встраиваемая</a>
+                                                        <span class="basket-product__vendor">Артикул MF-121</span>
+                                                        <footer class="basket-product__footer">
+                                                            <span class="basket-product__price">15 300 ₽</span>
+                                                            <div class="quantity basket-product__quantity">
+                                                                <button data-action="minus" type="button" class="quantity__button">
+                                                                    <svg width="12" height="1.5">
+                                                                        <path data-name="Line 121" fill="none" stroke="#999" stroke-width="1.5" d="M0 .75h12"/>
+                                                                    </svg>
+                                                                </button>
+                                                                <input class="quantity__input" type="text" value="1" name="quantity">
+                                                                <button data-action="add" type="button" class="quantity__button">
+                                                                    <svg width="12" height="12">
+                                                                        <g data-name="Group 52" fill="none" stroke="#222" stroke-width="1.5">
+                                                                            <path data-name="Line 122" d="M6 0v12"/>
+                                                                            <path data-name="Line 123" d="M0 6h12"/>
+                                                                        </g>
+                                                                    </svg>
+                                                                </button>
+                                                            </div>
+                                                        </footer>
+                                                        <button type="button" class="basket-product__remove-button">
+                                                            <svg width="12.707" height="12.707">
+                                                                <g data-name="Group 48" fill="none" stroke="#b8ccd5">
+                                                                    <path data-name="Line 41" d="M.354.354l12 12"/>
+                                                                    <path data-name="Line 42" d="M12.354.354l-12 12"/>
+                                                                </g>
+                                                            </svg>
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                                <div class="basket-product basket-products__list-item">
+                                                    <a href="#" class="basket-product__media">
+                                                        <img class="basket-product__media-img"  src="img/product-item.png" srcset="img/product-item.png 1x, img/product-item@2x.png 2x" alt="alt">
+                                                    </a>
+                                                    <div class="basket-product__grid">
+                                                        <a href="#" class="basket-product__name">MF-121-Раковина встраиваемая</a>
+                                                        <span class="basket-product__vendor">Артикул MF-121</span>
+                                                        <footer class="basket-product__footer">
+                                                            <span class="basket-product__price">15 300 ₽</span>
+                                                            <div class="quantity basket-product__quantity">
+                                                                <button data-action="minus" type="button" class="quantity__button">
+                                                                    <svg width="12" height="1.5">
+                                                                        <path data-name="Line 121" fill="none" stroke="#999" stroke-width="1.5" d="M0 .75h12"/>
+                                                                    </svg>
+                                                                </button>
+                                                                <input class="quantity__input" type="text" value="1" name="quantity">
+                                                                <button data-action="add" type="button" class="quantity__button">
+                                                                    <svg width="12" height="12">
+                                                                        <g data-name="Group 52" fill="none" stroke="#222" stroke-width="1.5">
+                                                                            <path data-name="Line 122" d="M6 0v12"/>
+                                                                            <path data-name="Line 123" d="M0 6h12"/>
+                                                                        </g>
+                                                                    </svg>
+                                                                </button>
+                                                            </div>
+                                                        </footer>
+                                                        <button type="button" class="basket-product__remove-button">
+                                                            <svg width="12.707" height="12.707">
+                                                                <g data-name="Group 48" fill="none" stroke="#b8ccd5">
+                                                                    <path data-name="Line 41" d="M.354.354l12 12"/>
+                                                                    <path data-name="Line 42" d="M12.354.354l-12 12"/>
+                                                                </g>
+                                                            </svg>
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <p class="basket-products__note">Форма оплаты, условия и стоимость доставки, согласовываются с менеджером в зависимости от города или региона отправления.</p>
+                                            <p class="basket-products__total">Итого: 55 230 ₽</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-6 basket-template__col">
+                                        <form class="form basket-template__form">
+                                            <span class="basket-template__col-name">Адрес доставки</span>
+                                            <div class="form__grid">
+                                                <div class="form__row">
+                                                    <div class="form__field form__field_size-m">
+                                                        <label for="name" class="form__field-label">Ф.И.О получателя:</label>
+                                                        <input type="text" id="name" name="name" class="form__input">
+                                                    </div>
+                                                    <div class="form__field form__field_size-m">
+                                                        <label for="tel" class="form__field-label">Контактный телефон:</label>
+                                                        <input type="tel" id="tel" name="tel" class="form__input" placeholder="+7 (926) 123-45-67">
+                                                    </div>
+                                                </div>
+                                                <div class="form__row">
+                                                    <div class="form__field form__field_size-m">
+                                                        <label for="email" class="form__field-label">E-mail:</label>
+                                                        <input type="email" id="email" name="email" class="form__input">
+                                                    </div>
+                                                    <div class="form__field form__field_size-m">
+                                                        <label for="company" class="form__field-label">Название организации:</label>
+                                                        <input type="text" id="company" name="company" class="form__input">
+                                                    </div>
+                                                </div>
+                                                <div class="form__row">
+                                                    <div class="form__field">
+                                                        <label for="address" class="form__field-label">Адрес доставки:</label>
+                                                        <input type="text" id="address" name="address" class="form__input" placeholder="г.Москва, ул Строителей 11, офис 15, подъезд 2">
+                                                    </div>
+                                                </div>
+                                                <div class="form__row">
+                                                    <div class="form__field">
+                                                        <label for="message" class="form__field-label">Комментарий:</label>
+                                                        <textarea name="message" id="message" class="form__input form__textarea"></textarea>
+                                                    </div>
+                                                </div>
+                                                <p class="form__privacy">Нажимая кнопку «Оформить заказ», вы соглашаетесь с правилами обработки <a href="#">«Персональных данных»</a></p>
+                                                <button type="submit" class="button button_filled button_size-m form__button">Оформить заказ</button>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
     <!-- End main -->
     <!-- Begin footer -->
     <footer class="footer">

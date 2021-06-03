@@ -57,7 +57,14 @@
   'layout/footer',
   'layout/main',
   'layout/section',
-  'layout/news-section';
+  'layout/news-section',
+  'layout/template',
+  'layout/catalog-template',
+  'layout/product-template',
+  'layout/product-details',
+  'layout/basket-products',
+  'layout/basket-template',
+  'layout/form';
 
 // 5. Components
 @import
@@ -66,7 +73,13 @@
   'components/swiper-pagination',
   'components/product-item',
   'components/video-section',
-  'components/news-item';
+  'components/news-item',
+  'components/breadcrumbs',
+  'components/sidebar',
+  'components/catalog-item',
+  'components/pagination',
+  'components/basket-product',
+  'components/quantity';
 
 // 6. Page-specific styles
 @import

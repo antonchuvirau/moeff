@@ -12,6 +12,9 @@
             max-width: 90%;
             max-height: 90%;
         }
+        &:hover {
+            opacity: .85;
+        }
     }
     &__content {
         @include flex(column, stretch);

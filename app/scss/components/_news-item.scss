@@ -8,6 +8,9 @@
             height: 100%;
             object-fit: cover;
         }
+        &:hover {
+            opacity: .85;
+        }
     }
     &__date {
         display: block;
@@ -34,6 +37,9 @@
             background: $primary;
             top: calc(100% + 12px);
             left: 0;
+        }
+        &:hover {
+            opacity: .85;
         }
     }
     &__desc {

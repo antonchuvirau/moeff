@@ -1,0 +1,19 @@
+.quantity {
+    @include flex(row, stretch);
+    &__input {
+        width: 30px;
+        padding: 0 5px;
+        text-align: center;
+        font-size: 2rem;
+    }
+    &__button {
+        @include flex(row, center, center);
+        width: 25px;
+        height: 30px;
+        border: 1px solid $secondary;
+        border-radius: 2px;
+        &:hover {
+            background: $secondary;
+        }
+    }
+}

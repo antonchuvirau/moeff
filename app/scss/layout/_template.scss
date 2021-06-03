@@ -1,0 +1,71 @@
+.template {
+    &__wrapper {
+        padding: 25px 0;
+        padding-bottom: 50px;
+        border-top: 1px solid $secondary-300;
+    }
+    &__breadcrumbs {
+        margin-bottom: 15px;
+    }
+    &__title {
+        margin: 0;
+        font-size: 2.4rem;
+        font-weight: bold;
+        line-height: 1.35;
+        margin-bottom: 30px;
+    }
+    &__pagination {
+        margin-top: 10px;
+        margin-bottom: 50px;
+    }
+    &__text {
+        margin-top: 20px;
+        & h2, h3, h4, h5, h6 {
+            margin: 0;
+            font-weight: bold;
+            line-height: 1.35;
+            color: $dark;
+            &:not(:first-child) {
+                margin-top: 30px;
+            }
+            &:not(:last-child) {
+                margin-bottom: 25px;
+            }
+        }
+        & h2 {
+            font-size: 2.2rem;
+        }
+        & h3 {
+            font-size: 2rem;
+        }
+        & h4, h5, h6 {
+            font-size: 1.8rem;
+        }
+        & a {
+            font-size: 1.5rem;
+            color: $black;
+            line-height: 1.55;
+        }
+        & p {
+            font-size: 1.5rem;
+            color: $black;
+            line-height: 1.55;
+            &:not(:last-child) {
+                margin-bottom: 20px;
+            }
+        }
+        & ul, ol {
+            &:not(:last-child) {
+                margin-bottom: 20px;
+            }
+            & li {
+                font-size: 1.5rem;
+                color: $black;
+                line-height: 1.55;
+                &:not(:last-child) {
+                    margin-bottom: 5px;
+                }
+            }
+        }
+    }
+}

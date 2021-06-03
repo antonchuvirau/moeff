@@ -1,0 +1,65 @@
+.basket-product {
+    position: relative;
+    @include flex(row, center);
+    &__media {
+        @include flex(row, center, center);
+        width: 120px;
+        height: 120px;
+        border: 1px solid $secondary;
+        border-radius: 2px;
+        flex-shrink: 0;
+        text-decoration: none;
+        &-img {
+            max-width: 85%;
+            max-height: 85%;
+        }
+        &:hover {
+            opacity: .85;
+        }
+    }
+    &__grid {
+        @include flex(column);
+        padding-left: 30px;
+    }
+    &__name {
+        margin: 0;
+        font-size: 1.5rem;
+        color: $dark;
+        letter-spacing: .03em;
+        font-weight: 600;
+        text-decoration: none;
+        &:hover {
+            opacity: .85;
+        }
+    }
+    &__vendor {
+        font-size: 1.2rem;
+        color: $gray-800;
+        letter-spacing: .03em;
+        margin-top: 10px;
+    }
+    &__footer {
+        @include flex(row, center);
+        margin-top: 30px;
+    }
+    &__remove-button {
+        @include flex(row, center, center);
+        position: absolute;
+        top: 3px;
+        right: 25px;
+        width: 25px;
+        height: 25px;
+        z-index: 1;
+    }
+    &__price {
+        margin: 0;
+        font-weight: bold;
+        font-size: 2rem;
+        letter-spacing: .05em;
+        line-height: 1.35;
+        flex-shrink: 0;
+    }
+    &__quantity {
+        margin-left: 60px;
+    }
+}

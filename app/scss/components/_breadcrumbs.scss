@@ -1,0 +1,24 @@
+.breadcrumbs {
+    &__list {
+        @include flex(row, center);
+        font-size: 1.4rem;
+        color: $black;
+    }
+    &__link {
+        font-size: 1.4rem;
+        text-decoration: none;
+        color: $black;
+        margin: 0 3px;
+        &:first-child {
+            margin-left: 0;
+        }
+        &:last-child {
+            margin-right: 0;
+        }
+        &[href] {
+            &:hover {
+                opacity: .85;
+            }
+        }
+    }
+}
