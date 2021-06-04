@@ -22,12 +22,10 @@ const documentElement = document.documentElement;
 
 function onOpenMenuButtonClickHandler() {
     if (openMenuButton.checked) {
-        openMenuButton.closest(`.header__button-menu`).classList.add(`header__button-menu_active`);
         offcanvasMenuElement.classList.add(`offcanvas-menu_opened`);
         documentElement.classList.add(`is-locked`);
     }
     else {
-        openMenuButton.closest(`.header__button-menu`).classList.remove(`header__button-menu_active`);
         offcanvasMenuElement.classList.remove(`offcanvas-menu_opened`);
         documentElement.classList.remove(`is-locked`); 
     }
