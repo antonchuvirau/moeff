@@ -1,0 +1,60 @@
+.about-template {
+    &__title {
+        max-width: 800px;
+        margin-bottom: 35px;
+    }
+    &__desc {
+        margin-bottom: 50px;
+        & p {
+            margin: 0;
+            font-size: 1.6rem;
+            line-height: 1.75;
+            color: $black;
+            font-weight: 600;
+            &:not(:last-child) {
+                margin-bottom: 20px;
+            }
+        }
+    }
+    &__content {
+        margin-top: 0;
+        & h2, h3, h4, h5, h6 {
+            &:not(:first-child) {
+                margin-top: 50px;
+            }
+        }
+        & h3 {
+            font-size: 2.2rem;
+        }
+        & ul, ol {
+            padding-left: 20px;
+        }
+        & ol {
+            padding: 0;
+            margin: 0;
+            list-style-type: none;
+            counter-reset: orderedlist;
+            padding-left: 45px;
+            & li {
+                position: relative;
+                &::before {
+                    position: absolute;
+                    top: 0;
+                    left: -25px;
+                    font-size: 1.6rem;
+                    font-weight: bold;
+                    color: $primary;
+                    counter-increment: orderedlist;
+                    content: counter(orderedlist) '.';
+                }
+            }
+        }
+    }
+    &__media {
+        & img {
+            display: block;
+            width: 100%;
+            max-width: 100%;
+        }
+    }
+}

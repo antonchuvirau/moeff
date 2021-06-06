@@ -9,9 +9,12 @@
         border-radius: 2px;
         flex-shrink: 0;
         text-decoration: none;
+        padding: 2px;
         &-img {
-            max-width: 85%;
-            max-height: 85%;
+            display: block;
+            width: 100%;
+            max-width: 100%;
+            max-height: 100%;
         }
         &:hover {
             opacity: .85;
@@ -50,6 +53,14 @@
         width: 25px;
         height: 25px;
         z-index: 1;
+        & svg {
+            pointer-events: none;
+        }
+        &:hover {
+            & g {
+                stroke: $primary;
+            }
+        }
     }
     &__price {
         margin: 0;
