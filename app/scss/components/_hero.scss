@@ -7,11 +7,11 @@
         padding-bottom: 75px;
     }
     &__content {
-        width: 55%;
+        width: 55.9%;
     }
     &__carousel {
         position: absolute;
-        width: 45%;
+        width: 44.1%;
         height: 100%;
         top: 0;
         bottom: 0;
@@ -45,7 +45,7 @@
         max-width: 485px;
     }
     &__desc {
-        max-width: 600px;
+        max-width: 630px;
         & p {
             margin: 0;
             font-size: 1.6rem;
@@ -54,6 +54,6 @@
         }
     }
     &__button {
-        margin-top: 35px;
+        margin-top: 55px;
     }
 }

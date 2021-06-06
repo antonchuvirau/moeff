@@ -20,15 +20,16 @@
             letter-spacing: .05em;
             font-weight: bold;
             line-height: 1.35;
-            margin-bottom: 15px;
+            margin-bottom: 20px;
+            color: $dark;
         }
         &-content {
             max-width: 91%;
             & p {
                 margin: 0;
-                font-size: 1.5rem;
+                font-size: 1.6rem;
                 letter-spacing: .03em;
-                line-height: 1.55;
+                line-height: 1.75;
                 &:not(:last-child) {
                     margin-bottom: 15px;
                 }

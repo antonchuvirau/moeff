@@ -1,6 +1,6 @@
 .sidebar {
     &__wrapper {
-        padding: 30px 0;
+        padding: 25px 0;
         border-radius: 2px;
         background: rgba($secondary, .5);
     }
@@ -9,8 +9,9 @@
         font-size: 1.8rem;
         font-weight: bold;
         line-height: 1.35;
-        margin-bottom: 20px;
+        margin-bottom: 21px;
         padding: 0 30px;
+        color: $dark;
     }
     &__list {
         &-item {
