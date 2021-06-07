@@ -94,9 +94,19 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-12">
-                            <h1 class="template__title">Антивандальная сантехника из нержавеющей стали - MOEFF</h1>
+                            <h1 class="template__title">
+                                <button type="button" class="template__title-button">
+                                    <label for="sidebar-icon" class="template__title-button-icon">
+                                        <input class="template__title-button-input" type="checkbox" id="sidebar-icon" /> 
+                                        <span class="template__title-button-line"></span>
+                                        <span class="template__title-button-line"></span>
+                                        <span class="template__title-button-line"></span>
+                                    </label>
+                                </button>
+                                Антивандальная сантехника из нержавеющей стали - MOEFF
+                            </h1>
                             <div class="template__container row">
-                                <div class="col-12 col-lg-3">
+                                <div class="d-none d-lg-block col-12 col-lg-3">
                                     <aside class="sidebar">
                                         <div class="sidebar__wrapper">
                                             <span class="sidebar__title">Каталог сантехники</span>
@@ -303,6 +313,28 @@
         <button type="button" class="search-box__button-close"></button>
     </div>
     <!-- END search modal -->
+    <!-- BEGIN mobile sidebar -->
+    <div class="mobile-sidebar">
+        <aside class="sidebar">
+            <div class="sidebar__wrapper">
+                <span class="sidebar__title">Каталог сантехники</span>
+                <ul class="list sidebar__list">
+                    <li class="sidebar__list-item"><a href="#" class="sidebar__list-link">Унитазы</a></li>
+                    <li class="sidebar__list-item"><a href="#" class="sidebar__list-link">Чаши Генуя</a></li>
+                    <li class="sidebar__list-item"><a href="#" class="sidebar__list-link sidebar__list-link_active">Писсуары</a></li>
+                    <li class="sidebar__list-item"><a href="#" class="sidebar__list-link">Раковины</a></li>
+                    <li class="sidebar__list-item"><a href="#" class="sidebar__list-link">Душевые поддоны</a></li>
+                    <li class="sidebar__list-item"><a href="#" class="sidebar__list-link">Мусорные урны</a></li>
+                    <li class="sidebar__list-item"><a href="#" class="sidebar__list-link">Аксессуары</a></li>
+                </ul>
+            </div>
+        </aside>
+        <a download href="#" class="template__download-catalog">
+            <svg class="template__download-catalog-icon" width="48.374" height="59.983"><g fill="#e2000f"><path data-name="Path 110" d="M48.055 13.46L34.88.288A.968.968 0 0034.195 0H9.89a6.9 6.9 0 00-6.652 7.126v26.3H0V51.25h3.238v1.608a6.917 6.917 0 006.652 7.126h31.831a6.9 6.9 0 006.652-7.126V14.24a1.078 1.078 0 00-.318-.78zM33.864 2.207l11.461 11.469h-6.239a5.221 5.221 0 01-5.223-5.207zm12.5 50.65a4.822 4.822 0 01-4.644 4.979H9.89a4.822 4.822 0 01-4.644-4.979V51.25h22.1c4.313 0 7.8-3.995 7.8-8.914s-3.5-8.914-7.8-8.914h-22.1v-26.3A4.822 4.822 0 019.89 2.147h21.965V8.47a7.3 7.3 0 007.231 7.354h7.278zm-40.15-6.022v-9h3.391a3.2 3.2 0 012.292.768 2.669 2.669 0 01.827 2.027 2.61 2.61 0 01-.824 2.03 3.3 3.3 0 01-2.292.768H7.692v3.407H6.215zm8.306 0v-9h2.93a3.632 3.632 0 013.793 3.815v1.37a3.632 3.632 0 01-3.793 3.815h-2.93zM28.3 41.8V43h-3.57v3.839h-1.488v-9h5.672v1.2h-4.195v2.747H28.3z"/><path data-name="Path 111" d="M10.891 41.773a1.6 1.6 0 00.421-1.13 1.517 1.517 0 00-1.682-1.6H7.682v3.185h1.947a1.7 1.7 0 001.262-.455z"/><path data-name="Path 112" d="M17.453 39.041h-1.478v6.61h1.478a2.142 2.142 0 001.719-.733 2.8 2.8 0 00.637-1.887v-1.382a2.79 2.79 0 00-.637-1.875 2.143 2.143 0 00-1.719-.733z"/></g></svg>
+            <span class="template__download-catalog-name">Скачать каталог продукции MOEFF</span>
+        </a>
+    </div>
+    <!-- END mobile sidebar -->
     <!-- BEGIN scripts -->
     <script src="js/application.js"></script>
     <!-- END scripts -->
