@@ -7,3 +7,15 @@
         }
     }
 }
+
+// MEDIA
+@media screen and (max-width: 991px) {
+    .news-section {
+        &__item {
+            width: calc((100% - 15px) / 2);
+            &:not(:last-child) {
+                margin-right: 15px;
+            }
+        }
+    }
+}

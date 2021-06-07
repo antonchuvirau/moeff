@@ -3,6 +3,9 @@
     &__wrapper {
         padding: 25px 0;
     }
+    &__logo {
+        display: block;
+    }
     &__grid {
         @include flex(row, center, flex-end);
     }
@@ -23,10 +26,17 @@
     }
     &__button {
         margin-right: 45px;
+        & svg {
+            pointer-events: none;
+        }
         &:last-child {
             margin-right: 0;
         }
         &-search {
+            width: 25px;
+            height: 25px;
+        }
+        &-call {
             width: 25px;
             height: 25px;
         }
@@ -120,6 +130,43 @@
                         }
                     }
                 }
+            }
+        }
+    }
+}
+
+// MEDIA
+@media screen and (max-width: 991px) {
+    .header {
+        position: relative;
+        box-shadow: 0 3px 6px 0 rgba($full-dark, .15);
+        z-index: 11;
+        &__wrapper {
+            padding: 0;
+            padding-top: 14px;
+            height: 65px;
+        }
+        &__logo {
+            &-img {
+                max-width: 130px;
+            }
+        }
+    }
+}
+@media screen and (max-width: 575px) {
+    .header {
+        &__button {
+            margin-right: 35px;
+            &-menu {
+                &-icon {
+                    width: 30px;
+                    &::after {
+                        content: none;
+                    }
+                }
+            }
+            &-call {
+                margin-right: 30px;
             }
         }
     }

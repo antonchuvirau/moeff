@@ -55,3 +55,35 @@
         }
     }
 }
+
+// MEDIA
+@media screen and (max-width: 991px) {
+    .news-item {
+        &__media {
+            height: 29.47vw;
+        }
+    }
+}
+@media screen and (max-width: 575px) {
+    .news-item {
+        &__date {
+            font-size: 1.2rem;
+            margin-top: 10px;
+        }
+        &__name {
+            font-size: 1.3rem;
+            margin-top: 5px;
+            &::after {
+                width: 25px;
+                height: 3px;
+                top: calc(100% + 8px);
+            }
+        }
+        &__desc {
+            margin-top: 20px;
+            & p {
+                font-size: 1.2rem;
+            }
+        }
+    }
+}

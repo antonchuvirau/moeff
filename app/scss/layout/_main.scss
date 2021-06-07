@@ -9,3 +9,18 @@
         }
     }
 }
+
+// MEDIA
+@media screen and (max-width: 575px) {
+    .main {
+        &__wrapper {
+            padding: 25px 0;
+            padding-bottom: 50px;
+        }
+        &__section {
+            &:not(:last-child) {
+                margin-bottom: 10px;
+            }
+        }
+    }
+}

@@ -22,3 +22,41 @@
         }
     }
 }
+
+// MEDIA
+@media screen and (max-width: 991px) {
+    .section {
+        &__title {
+            font-size: 1.8rem;
+        }
+        &__col {
+            &:not(:last-child) {
+                margin-bottom: 35px;
+            }
+        }
+    }
+}
+@media screen and (max-width: 767px) {
+    .section {
+        &__title {
+            font-size: 1.6rem;
+        }
+    }
+}
+@media screen and (max-width: 575px) {
+    .section {
+        &__grid {
+            &-col {
+                margin-bottom: 20px;
+                &.col-6 {
+                    &:nth-child(odd) {
+                        padding-right: 7.5px;
+                    }
+                    &:nth-child(even) {
+                        padding-left: 7.5px;
+                    }
+                }
+            }
+        }
+    }
+}

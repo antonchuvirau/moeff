@@ -24,16 +24,16 @@
         <div class="header__wrapper">
             <div class="container">
                 <div class="row align-items-center">
-                    <div class="col-3">
+                    <div class="col-4 col-lg-3">
                         <a href="#" class="logo header__logo">
-                            <img class="logo__img" src="img/logo.svg" alt="alt">
+                            <img class="logo__img header__logo-img" src="img/logo.svg" alt="alt">
                         </a>
                     </div>
-                    <div class="col-9">
+                    <div class="col-8 col-lg-9">
                         <div class="header__grid">
-                            <a href="88007707268" class="header__link">Бесплатные звонки по России<span class="header__link-value">8 (800) 770-72-68</span></a>
-                            <a href="84957761819" class="header__link">Заказы по телефону<span class="header__link-value">8 (495) 776-18-19</span></a>
-                            <button type="button" class="header__button header__button-search">
+                            <a href="tel:88007707268" class="d-none header__link">Бесплатные звонки по России<span class="header__link-value">8 (800) 770-72-68</span></a>
+                            <a href="tel:84957761819" class="d-none header__link">Заказы по телефону<span class="header__link-value">8 (495) 776-18-19</span></a>
+                            <button type="button" class="d-none d-lg-block header__button header__button-search">
                                 <svg class="header__button-icon" xmlns="http://www.w3.org/2000/svg" width="25.001" height="25">
                                     <g fill="none">
                                         <path d="M.002-.003v25h25v-25z"/>
@@ -42,6 +42,14 @@
                                     </g>
                                 </svg>
                             </button>
+                            <a href="tel:88007707268" class="header__button header__button-call d-lg-none">
+                                <svg class="header__button-icon" xmlns="http://www.w3.org/2000/svg" width="25" height="25.033">
+                                    <g fill="none">
+                                        <path d="M5.894 16.821c-3.035-4.918-4.243-11.563.167-15.047a9.314 9.314 0 011.1-.661c.761-.315 1.289.027 1.879.654a13.707 13.707 0 012.311 3.741 1.557 1.557 0 01-.557 2.038 17.81 17.81 0 01-1.259 1.076 1.48 1.48 0 00-.459 1.877 22.553 22.553 0 001.639 3.233 22.759 22.759 0 002.2 2.981 1.48 1.48 0 001.883.432 15.116 15.116 0 011.535-.692 1.563 1.563 0 012.032.432 15.347 15.347 0 012.308 3.743c.307.733.491 1.51-.2 2.033a6.62 6.62 0 01-1.112.658c-5.093 2.376-10.509-1.708-13.467-6.498z" stroke="#444" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="79.84" stroke-width="2"/>
+                                        <path d="M0 .012v24.99h25V.012z"/>
+                                    </g>
+                                </svg>
+                            </a>
                             <a href="#" class="header__button header__button-basket">
                                 <svg class="header__button-icon" xmlns="http://www.w3.org/2000/svg" width="26" height="25.36">
                                     <g fill="none">
@@ -225,7 +233,7 @@
         <div class="footer__wrapper">
             <div class="container">
                 <div class="row">
-                    <div class="col-4">
+                    <div class="col-12 col-lg-4">
                         <img class="footer__logo" src="img/logo.svg" alt="alt">
                         <div class="footer__col">
                             <span class="footer__col-name">Наш адрес</span>
@@ -236,7 +244,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-5">
+                    <div class="col-12 col-lg-5">
                         <div class="footer__navigation">
                             <div class="footer__col">
                                 <span class="footer__col-name">Информация</span>
@@ -263,21 +271,19 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-3">
+                    <div class="col-12 col-lg-3">
                         <div class="footer__search">
                             <form class="footer__search-form">
                                 <input type="text" name="search" class="footer__search-form-input">
-                                <button class="footer__search-form-button" type="submit">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"><g fill="none"><path d="M.202.198v20h20v-20z"/><path d="M13.343 13.341l5.26 5.261" stroke="#444" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="79.84" stroke-width="2"/><path d="M8.202.998a7.2 7.2 0 017.2 7.2 7.2 7.2 0 01-7.2 7.2 7.2 7.2 0 01-7.2-7.2 7.2 7.2 0 017.2-7.2z" stroke="#444" stroke-miterlimit="79.84" stroke-width="2"/></g></svg>
-                                </button>
+                                <button class="footer__search-form-button" type="submit"></button>
                             </form>
                         </div>
                         <a href="#" class="footer__social-link">MOEFFRUS в Instgram</a>
                     </div>
-                    <div class="col-6">
+                    <div class="col-12 col-lg-6">
                         <p class="footer__text">&copy; 2011-2021. ООО «МОЕФФ РУС» Все права защищены.</p>
                     </div>
-                    <div class="col-6">
+                    <div class="col-12 col-lg-6">
                         <p class="footer__text footer__text_align-r"><a target="_blank" rel="noopener noreferrer" href="#">Разработка сайта</a> LogicStudio.Ru</p>
                     </div>
                 </div>
@@ -288,6 +294,12 @@
     <!-- Begin offcanvas menu -->
     <div class="offcanvas-menu">
         <div class="offcanvas-menu__wrapper">
+            <header class="offcanvas-menu__header">
+                <form class="d-lg-none offcanvas-menu__form">
+                    <input type="text" name="search" class="offcanvas-menu__form-input">
+                    <button type="submit" class="offcanvas-menu__form-button"></button>
+                </form>
+            </header>
             <div class="offcanvas-menu__container">
                 <div class="offcanvas-menu__col">
                     <span class="offcanvas-menu__col-name">Информация</span>
@@ -316,6 +328,17 @@
         </div>
     </div>
     <!-- End offcanvas menu -->
+    <!-- BEGIN search modal -->
+    <div class="search-box">
+        <div class="search-box__wrapper">
+            <form class="search-box__form">
+                <input type="text" name="search" class="search-box__form-input">
+                <button type="submit" class="search-box__form-button"></button>
+            </form>
+        </div>
+        <button type="button" class="search-box__button-close"></button>
+    </div>
+    <!-- END search modal -->
     <!-- BEGIN scripts -->
     <script src="js/application.js"></script>
     <!-- END scripts -->

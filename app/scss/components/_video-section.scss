@@ -1,4 +1,6 @@
 .video-section {
+    display: block;
+    text-decoration: none;
     &__box {
         position: relative;
         @include flex(column, center, center);
@@ -43,10 +45,7 @@
         border-radius: 50%;
         margin-bottom: 30px;
         z-index: 2;
-        &-icon {
-            position: relative;
-            right: -5px;
-        }
+        background: icon('icon-play.svg') no-repeat 23px 50% / 30px auto;
     }
     &__title {
         position: relative;
@@ -66,6 +65,37 @@
             top: calc(100% + 6px);
             left: 50%;
             margin-left: -20px;
+        }
+    }
+}
+
+// MEDIA
+@media screen and (max-width: 991px) {
+    .video-section {
+        &__box {
+            height: 57vw;
+        }
+    }
+}
+@media screen and (max-width: 575px) {
+    .video-section {
+        &__button {
+            width: 60px;
+            height: 60px;
+            margin-bottom: 20px;
+            background-position: 17px 50%;
+        }
+        &__title {
+            font-size: 1.3rem;
+            &::after {
+                width: 25px;
+                height: 3px;
+                top: calc(100% + 9px);
+                margin-left: -12.5px;
+            }
+        }
+        &__note {
+            font-size: 1rem;
         }
     }
 }

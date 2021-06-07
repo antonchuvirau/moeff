@@ -42,7 +42,8 @@
 // 2. Vendors
 @import
   'vendors/normalize',
-  'vendors/swiperjs';
+  'vendors/swiperjs',
+  'vendors/fancyapp';
 
 // 3. Base stuff
 @import
@@ -81,7 +82,8 @@
   'components/pagination',
   'components/basket-product',
   'components/quantity',
-  'components/offcanvas-menu';
+  'components/offcanvas-menu',
+  'components/search-box';
 
 // 6. Page-specific styles
 @import

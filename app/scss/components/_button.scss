@@ -35,3 +35,11 @@
         }
     }
 }
+
+// MEDIA
+@media screen and (max-width: 575px) {
+    .button {
+        font-size: 1.6rem;
+        padding: .8em 2em;
+    }
+}

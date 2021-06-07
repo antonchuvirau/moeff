@@ -106,10 +106,60 @@
                 top: 50%;
                 left: 10px;
                 margin-top: -10px;
+                background: icon('icon-search.svg') no-repeat 50% / 20px auto;
             }
         }
         &:not(:last-child) {
             margin-bottom: 40px;
+        }
+    }
+}
+
+// MEDIA
+@media screen and (max-width: 991px) {
+    .footer {
+        &__wrapper {
+            padding: 40px 0;
+        }
+        &__text {
+            font-size: 1.2rem;
+            margin-top: 10px;
+            &_align {
+                &-r {
+                    text-align: left;
+                }
+            }
+        }
+        &__logo {
+            max-width: 185px;
+            margin-bottom: 30px;
+        }
+        &__search {
+            &:not(:last-child) {
+                margin-bottom: 30px;
+            }
+        }
+        &__social {
+            &-link {
+                display: inline-block;
+                margin-bottom: 25px;
+            }
+        }
+        &__navigation {
+            margin: 35px 0;
+        }
+        &__col {
+            &-name {
+                font-size: 1.3rem;
+            }
+            &-grid {
+                & a {
+                    font-size: 1.3rem;
+                }
+                & p {
+                    font-size: 1.3rem;
+                }
+            }
         }
     }
 }

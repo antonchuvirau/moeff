@@ -5,6 +5,9 @@ const productGalleryElement = document.querySelector(`.product-details__gallery-
 const productThumbsElement = document.querySelector(`.product-details__thumbs-box`);
 const openMenuButton = document.querySelector(`.header__button-menu-input`);
 const offcanvasMenuElement = document.querySelector(`.offcanvas-menu`);
+const openSearchBoxButton = document.querySelector(`.header__button-search`);
+const closeSearchBoxButton = document.querySelector(`.search-box__button-close`);
+const searchBoxElement = document.querySelector(`.search-box`);
 const documentElement = document.documentElement;
 
 function onOpenMenuButtonClickHandler() {
@@ -16,6 +19,14 @@ function onOpenMenuButtonClickHandler() {
         offcanvasMenuElement.classList.remove(`offcanvas-menu_opened`);
         documentElement.classList.remove(`is-locked`); 
     }
+}
+
+function onOpenSearchBoxButtonClickHandler() {
+    searchBoxElement.classList.add(`search-box_opened`);
+}
+
+function onCloseSearchBoxButtonClickHandler() {
+    searchBoxElement.classList.remove(`search-box_opened`);
 }
 
 document.addEventListener(`DOMContentLoaded`, () => {
@@ -47,5 +58,11 @@ document.addEventListener(`DOMContentLoaded`, () => {
     }
     if (openMenuButton) {
         openMenuButton.addEventListener(`click`, onOpenMenuButtonClickHandler);
+    }
+    if (openSearchBoxButton) {
+        openSearchBoxButton.addEventListener(`click`, onOpenSearchBoxButtonClickHandler);
+    }
+    if (closeSearchBoxButton) {
+        closeSearchBoxButton.addEventListener(`click`, onCloseSearchBoxButtonClickHandler);
     }
 });

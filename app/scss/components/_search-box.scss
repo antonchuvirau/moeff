@@ -1,0 +1,50 @@
+.search-box {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 100%;
+    max-width: 650px;
+    transform: translate3d(-50%, -100%, 0);
+    transition: transform .65s ease;
+    z-index: 15;
+    &_opened {
+        transform: translate3d(-50%, 120px, 0);
+    }
+    &__wrapper {
+        padding: 35px 30px;
+        background: $secondary-100;
+        border-radius: 2px;
+        box-shadow: 0 3px 20px 0 rgba($full-dark, .15);
+    }
+    &__form {
+        position: relative;
+        &-input {
+            width: 100%;
+            height: 50px;
+            border: 1px solid $secondary-500;
+            border-radius: 3px;
+            padding-left: 55px;
+            background: $white;
+        }
+        &-button {
+            position: absolute;
+            width: 30px;
+            height: 30px;
+            top: 50%;
+            margin-top: -15px;
+            left: 15px;
+            background: icon('icon-search-gray.svg') no-repeat 50% / 30px auto;
+        }
+    }
+    &__button {
+        &-close {
+            position: absolute;
+            width: 25px;
+            height: 25px;
+            top: 5px;
+            right: 5px;
+            background: icon('icon-close.svg') no-repeat 50% / 12px auto;
+            z-index: 1;
+        }
+    }
+}

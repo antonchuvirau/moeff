@@ -61,3 +61,31 @@
         }
     }
 }
+
+// MEDIA
+@media screen and (max-width: 991px) {
+    .product-item {
+        &__media {
+            height: 41.55vw;
+        }
+    }
+}
+@media screen and (max-width: 575px) {
+    .product-item {
+        &__content {
+            margin-top: 15px;
+            padding: 10px;
+            padding-top: 0;
+        }
+        &__name {
+            font-size: 1.3rem;
+            margin-bottom: 15px;
+        }
+        &__price {
+            font-size: 1.5rem;
+        }
+        &__button {
+            font-size: 1.1rem;
+        }
+    }
+}

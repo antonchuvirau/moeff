@@ -18,7 +18,8 @@
     }
     &__content {
         margin-top: auto;
-        padding-bottom: 45px;
+        padding: 0 15px;
+        padding-bottom: 50px;
     }
     &__name {
         position: relative;
@@ -26,10 +27,8 @@
         font-size: 1.6rem;
         font-weight: 600;
         letter-spacing: .05em;
-        line-height: 1.35;
+        line-height: 1.45;
         max-width: 220px;
-        margin: 0 auto;
-        text-align: center;
         color: $dark;
         &::after {
             content: '';
@@ -37,9 +36,8 @@
             width: 40px;
             height: 4px;
             background: $primary;
-            top: calc(100% + 10px);
-            left: 50%;
-            margin-left: -20px;
+            top: calc(100% + 15px);
+            left: 0;
         }
     }
     &:hover {
