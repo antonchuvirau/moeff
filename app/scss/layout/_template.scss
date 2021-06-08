@@ -142,10 +142,17 @@
 }
 
 // MEDIA
+@media screen and (max-width: 991px) {
+    .template {
+        &__grid {
+            overflow: hidden;
+        }
+    }
+}
 @media screen and (max-width: 575px) {
     .template {
         &__title {
-            font-size: 2.2rem;
+            font-size: 2rem;
         }
         &__text {
             & h2 {
@@ -158,16 +165,19 @@
                 font-size: 1.8rem;
             }
             & a {
-                font-size: 1.5rem;
+                font-size: 1.4rem;
             }
             & p {
-                font-size: 1.5rem;
+                font-size: 1.4rem;
             }
             & ul, ol {
                 & li {
-                    font-size: 1.5rem;
+                    font-size: 1.4rem;
                 }
             }
+        }
+        &__breadcrumbs {
+            margin-bottom: 10px;
         }
     }
 }

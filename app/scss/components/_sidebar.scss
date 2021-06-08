@@ -40,3 +40,15 @@
         }
     }
 }
+
+// MEDIA
+@media screen and (max-width: 991px) {
+    .sidebar {
+        &__list {
+            &-link {
+                font-size: 1.4rem;
+                padding-left: 45px;
+            }
+        }
+    }
+}

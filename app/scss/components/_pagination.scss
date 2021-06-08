@@ -30,3 +30,20 @@
         }
     }
 }
+
+// MEDIA
+@media screen and (max-width: 575px) {
+    .pagination {
+        &__link {
+            font-size: 1.5rem;
+            width: 35px;
+            height: 35px;
+            line-height: 33px;
+        }
+        &__item {
+            &:not(:last-child) {
+                margin-right: 15px;
+            }
+        }
+    }
+}

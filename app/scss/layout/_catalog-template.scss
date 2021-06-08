@@ -6,3 +6,30 @@
         margin-bottom: 30px;
     }
 }
+
+// MEDIA
+@media screen and (max-width: 991px) {
+    .catalog-template {
+        &__title {
+            margin-bottom: 10px;
+        }
+        &__sidebar {
+            margin-bottom: 20px;
+        }
+    }
+}
+@media screen and (max-width: 575px) {
+    .catalog-template {
+        &__col {
+            margin-bottom: 20px;
+            &.col-6 {
+                &:nth-child(odd) {
+                    padding-right: 7.5px;
+                }
+                &:nth-child(even) {
+                    padding-left: 7.5px;
+                }
+            }
+        }
+    }
+}

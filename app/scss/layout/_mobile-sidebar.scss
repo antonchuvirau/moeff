@@ -1,3 +1,79 @@
 .mobile-sidebar {
-    display: none;
+    position: relative;
+    @include flex(column, flex-start, center);
+    background: $secondary-100;
+    padding: 10px 0;
+    z-index: 5;
+    &::after {
+        content: '';
+        position: absolute;
+        width: 500px;
+        height: 100%;
+        top: 0;
+        right: 100%;
+        background: $secondary-100;
+    }
+    &::before {
+        content: '';
+        position: absolute;
+        width: 500px;
+        height: 100%;
+        top: 0;
+        left: 100%;
+        background: $secondary-100;
+    }
+    &__grid {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background: $secondary-100;
+        &::after {
+            content: '';
+            position: absolute;
+            width: 500px;
+            height: 100%;
+            top: 0;
+            right: 100%;
+            background: $secondary-100;
+        }
+        &::before {
+            content: '';
+            position: absolute;
+            width: 500px;
+            height: 100%;
+            top: 0;
+            left: 100%;
+            background: $secondary-100;
+        }
+        &_active {
+            display: block;
+        }
+    }
+    &__button {
+        &-icon {
+            position: relative;
+            &::after {
+                content: 'Каталог сантехники';
+                position: absolute;
+                top: 50%;
+                transform: translateY(-50%);
+                left: calc(100% + 15px);
+                white-space: nowrap;
+                font-size: 1.4rem;
+                font-weight: bold;
+                color: $dark;
+            }
+        }
+    }
+}
+
+// MEDIA
+@media screen and (max-width: 991px) {
+    .mobile-sidebar {
+        &__grid {
+            padding: 10px 0;
+        }
+    }
 }

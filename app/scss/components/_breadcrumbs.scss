@@ -9,6 +9,10 @@
         text-decoration: none;
         color: $black;
         margin: 0 3px;
+        white-space: nowrap;
+        max-width: 135px;
+        overflow: hidden;
+        text-overflow: ellipsis;
         &:first-child {
             margin-left: 0;
         }

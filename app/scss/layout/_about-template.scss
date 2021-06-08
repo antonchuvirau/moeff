@@ -62,18 +62,30 @@
 // MEDIA
 @media screen and (max-width: 575px) {
     .about-template {
+        &__title {
+            margin-bottom: 25px;
+        }
         &__content {
             & ol {
                 padding-left: 25px;
             }
             & h2, h3, h4, h5, h6 {
                 &:not(:first-child) {
-                    margin-top: 35px;
+                    margin-top: 30px;
                 }
+                &:not(:last-child) {
+                    margin-bottom: 25px;
+                }
+            }
+            & h3 {
+                font-size: 1.9rem;
             }
         }
         &__desc {
             margin-bottom: 35px;
+            & p {
+                font-size: 1.5rem;
+            }
         }
     }
 }

@@ -44,3 +44,31 @@
         opacity: .85;
     }
 }
+
+// MEDIA
+@media screen and (max-width: 991px) {
+    .catalog-item {
+        &__media {
+            height: 41.55vw;
+        }
+    }
+}
+@media screen and (max-width: 575px) {
+    .catalog-item {
+        &__name {
+            font-size: 1.3rem;
+            &::after {
+                width: 25px;
+                height: 3px;
+                top: calc(100% + 10px)
+            }
+        }
+        &__media {
+            margin-bottom: 15px;
+        }
+        &__content {
+            padding: 0 10px;
+            padding-bottom: 30px;
+        }
+    }
+}

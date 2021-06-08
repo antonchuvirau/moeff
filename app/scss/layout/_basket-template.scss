@@ -24,3 +24,12 @@
         padding-top: 30px;
     }
 }
+
+// MEDIA
+@media screen and (max-width: 575px) {
+    .basket-template {
+        &__form {
+            padding: 30px 15px;
+        }
+    }
+}

@@ -27,3 +27,14 @@
         margin-bottom: 25px;
     }
 }
+
+// MEDIA
+@media screen and (max-width: 575px) {
+    .basket-products {
+        &__list {
+            &-item {
+                padding-right: 35px;
+            }
+        }
+    }
+}

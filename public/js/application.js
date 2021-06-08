@@ -36,6 +36,7 @@ const offcanvasMenuElement = document.querySelector(`.offcanvas-menu`);
 const openSearchBoxButton = document.querySelector(`.header__button-search`);
 const closeSearchBoxButton = document.querySelector(`.search-box__button-close`);
 const searchBoxElement = document.querySelector(`.search-box`);
+const mobileSidebarOpenButton = document.querySelector(`.template__title-button-input`);
 const documentElement = document.documentElement;
 
 function onOpenMenuButtonClickHandler() {
@@ -55,6 +56,15 @@ function onOpenSearchBoxButtonClickHandler() {
 
 function onCloseSearchBoxButtonClickHandler() {
     searchBoxElement.classList.remove(`search-box_opened`);
+}
+
+function onMobileSidebarOpenButtonChangeHandler() {
+    if (mobileSidebarOpenButton.checked) {
+        mobileSidebarOpenButton.closest(`.mobile-sidebar`).querySelector(`.mobile-sidebar__grid`).classList.add(`mobile-sidebar__grid_active`);
+    }
+    else {
+        mobileSidebarOpenButton.closest(`.mobile-sidebar`).querySelector(`.mobile-sidebar__grid`).classList.remove(`mobile-sidebar__grid_active`);
+    }
 }
 
 document.addEventListener(`DOMContentLoaded`, () => {
@@ -92,5 +102,8 @@ document.addEventListener(`DOMContentLoaded`, () => {
     }
     if (closeSearchBoxButton) {
         closeSearchBoxButton.addEventListener(`click`, onCloseSearchBoxButtonClickHandler);
+    }
+    if (mobileSidebarOpenButton) {
+        mobileSidebarOpenButton.addEventListener(`change`, onMobileSidebarOpenButtonChangeHandler);
     }
 });

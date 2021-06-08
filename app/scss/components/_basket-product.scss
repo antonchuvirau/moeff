@@ -74,3 +74,31 @@
         margin-left: 60px;
     }
 }
+
+// MEDIA
+@media screen and (max-width: 575px) {
+    .basket-product {
+        align-items: flex-start;
+        &__media {
+            width: 80px;
+            height: 80px;
+        }
+        &__grid {
+            padding-left: 15px;
+        }
+        &__vendor {
+            font-size: 1.1rem;
+            margin-top: 5px;
+        }
+        &__footer {
+            margin-top: 5px;
+        }
+        &__price {
+            font-size: 1.8rem;
+        }
+        &__remove-button {
+            top: -5px;
+            right: 0;
+        }
+    }
+}
