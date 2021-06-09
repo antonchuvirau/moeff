@@ -16,6 +16,13 @@
         &__sidebar {
             margin-bottom: 20px;
         }
+        &__list {
+            & + .template {
+                &__help-box {
+                    margin-top: 10px;
+                }
+            }
+        }
     }
 }
 @media screen and (max-width: 575px) {

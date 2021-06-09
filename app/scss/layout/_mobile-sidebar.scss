@@ -54,12 +54,13 @@
     &__button {
         &-icon {
             position: relative;
+            padding-right: 200px;
             &::after {
                 content: 'Каталог сантехники';
                 position: absolute;
                 top: 50%;
                 transform: translateY(-50%);
-                left: calc(100% + 15px);
+                right: 0;
                 white-space: nowrap;
                 font-size: 1.4rem;
                 font-weight: bold;

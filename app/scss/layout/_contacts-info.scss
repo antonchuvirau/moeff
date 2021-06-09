@@ -1,0 +1,69 @@
+.contacts-info {
+    &__section {
+        &:not(:last-child) {
+            margin-bottom: 50px;
+        }
+        &-title {
+            display: block;
+            margin: 0;
+            font-size: 1.8rem;
+            color: $dark;
+            font-weight: bold;
+            letter-spacing: .05em;
+            line-height: 1.35;
+            margin-bottom: 20px;
+        }
+        & p, a {
+            text-decoration: none;
+            font-size: 1.6rem;
+            line-height: 1.75;
+            margin: 0;
+            color: $dark;
+        }
+        & a {
+            &[href*="mailto"] {
+                color: $primary;
+                text-decoration: underline;
+            }
+            &[download] {
+                display: inline-block;
+                position: relative;
+                font-weight: 600;
+                text-decoration: underline;
+                padding-left: 35px;
+                margin-top: 15px;
+                &::before {
+                    content: '';
+                    position: absolute;
+                    width: 21px;
+                    height: 25px;
+                    background: icon('icon-doc.svg') no-repeat 50% / 21px auto;
+                    left: 0;
+                    top: 50%;
+                    margin-top: -12.5px;
+                }
+            }
+            &:hover {
+                opacity: .85;
+            }
+        }
+    }
+}
+
+// MEDIA
+@media screen and (max-width: 575px) {
+    .contacts-info {
+        &__section {
+            &:not(:last-child) {
+                margin-bottom: 35px;
+            }
+            &-title {
+                font-size: 1.6rem;
+                margin-bottom: 20px;
+            }
+            & p, a {
+                font-size: 1.5rem;
+            }
+        }
+    }
+}

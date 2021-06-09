@@ -5564,17 +5564,24 @@ table {
   border-radius: 2px;
   text-decoration: none; }
   .template__download-catalog-name {
-    font-size: 1.6rem;
+    font-size: 1.5rem;
     line-height: 1.35;
     letter-spacing: .03em;
     color: #222;
     font-weight: bold;
     margin-left: 15px; }
+    .template__download-catalog-name span {
+      display: block;
+      color: #E2000F; }
   .template__download-catalog-icon {
     -ms-flex-negative: 0;
-        flex-shrink: 0; }
+        flex-shrink: 0;
+    max-width: 60px;
+    max-height: 60px; }
   .template__download-catalog:hover {
     opacity: .85; }
+  .template__download-catalog:last-child {
+    margin-top: 25px; }
 
 .template__text {
   margin-top: 20px; }
@@ -5613,9 +5620,38 @@ table {
     .template__text ul li:not(:last-child), .template__text ol li:not(:last-child) {
       margin-bottom: 5px; }
 
+.template__map {
+  width: 100%;
+  height: 32vw;
+  max-height: 460px; }
+
 @media screen and (max-width: 991px) {
+  .template__text {
+    margin-top: 50px; }
   .template__grid {
-    overflow: hidden; } }
+    overflow: hidden; }
+  .template__help-box {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-wrap: no-wrap;
+        flex-wrap: no-wrap; }
+  .template__download-catalog:nth-child(n) {
+    margin-top: 0; }
+  .template__download-catalog:not(:last-child) {
+    margin-right: 30px; }
+  .template__pagination {
+    margin-bottom: 30px; } }
 
 @media screen and (max-width: 575px) {
   .template__title {
@@ -5633,7 +5669,21 @@ table {
   .template__text ul li, .template__text ol li {
     font-size: 1.4rem; }
   .template__breadcrumbs {
-    margin-bottom: 10px; } }
+    margin-bottom: 10px; }
+  .template__download-catalog {
+    padding: 15px;
+    padding-left: 10px; }
+    .template__download-catalog:not(:last-child) {
+      margin-right: 15px; }
+    .template__download-catalog-icon {
+      max-width: 30px;
+      max-height: 30px; }
+    .template__download-catalog-name {
+      font-size: 1.1rem;
+      margin-left: 8px; }
+  __map {
+    height: 80vw;
+    max-height: 460px; } }
 
 .catalog-template__item {
   height: 100%; }
@@ -5645,7 +5695,9 @@ table {
   .catalog-template__title {
     margin-bottom: 10px; }
   .catalog-template__sidebar {
-    margin-bottom: 20px; } }
+    margin-bottom: 20px; }
+  .catalog-template__list + .template__help-box {
+    margin-top: 10px; } }
 
 @media screen and (max-width: 575px) {
   .catalog-template__col {
@@ -6215,7 +6267,8 @@ table {
     .mobile-sidebar__grid_active {
       display: block; }
   .mobile-sidebar__button-icon {
-    position: relative; }
+    position: relative;
+    padding-right: 200px; }
     .mobile-sidebar__button-icon::after {
       content: 'Каталог сантехники';
       position: absolute;
@@ -6223,7 +6276,7 @@ table {
       -webkit-transform: translateY(-50%);
           -ms-transform: translateY(-50%);
               transform: translateY(-50%);
-      left: calc(100% + 15px);
+      right: 0;
       white-space: nowrap;
       font-size: 1.4rem;
       font-weight: bold;
@@ -6232,6 +6285,83 @@ table {
 @media screen and (max-width: 991px) {
   .mobile-sidebar__grid {
     padding: 10px 0; } }
+
+.contacts-template__col-name {
+  display: block;
+  margin: 0;
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #222;
+  letter-spacing: .05em;
+  line-height: 1.35;
+  margin-bottom: 20px; }
+
+.contacts-template__form {
+  padding: 30px;
+  padding-bottom: 40px;
+  background: rgba(222, 234, 239, 0.5);
+  border-radius: 2px; }
+
+@media screen and (max-width: 991px) {
+  .contacts-template__col:not(:last-child) {
+    margin-bottom: 45px; } }
+
+@media screen and (max-width: 575px) {
+  .contacts-template__form {
+    padding: 30px 15px; } }
+
+.contacts-info__section:not(:last-child) {
+  margin-bottom: 50px; }
+
+.contacts-info__section-title {
+  display: block;
+  margin: 0;
+  font-size: 1.8rem;
+  color: #222;
+  font-weight: bold;
+  letter-spacing: .05em;
+  line-height: 1.35;
+  margin-bottom: 20px; }
+
+.contacts-info__section p, .contacts-info__section a {
+  text-decoration: none;
+  font-size: 1.6rem;
+  line-height: 1.75;
+  margin: 0;
+  color: #222; }
+
+.contacts-info__section a[href*="mailto"] {
+  color: #E2000F;
+  text-decoration: underline; }
+
+.contacts-info__section a[download] {
+  display: inline-block;
+  position: relative;
+  font-weight: 600;
+  text-decoration: underline;
+  padding-left: 35px;
+  margin-top: 15px; }
+  .contacts-info__section a[download]::before {
+    content: '';
+    position: absolute;
+    width: 21px;
+    height: 25px;
+    background: url("../img/icons/icon-doc.svg") no-repeat 50%/21px auto;
+    left: 0;
+    top: 50%;
+    margin-top: -12.5px; }
+
+.contacts-info__section a:hover {
+  opacity: .85; }
+
+@media screen and (max-width: 575px) {
+  .contacts-info__section:not(:last-child) {
+    margin-bottom: 35px; }
+  .contacts-info__section-title {
+    font-size: 1.6rem;
+    margin-bottom: 20px; }
+  .contacts-info__section p, .contacts-info__section a {
+    font-size: 1.5rem; } }
 
 .button {
   display: inline-block;
@@ -6810,7 +6940,7 @@ table {
   .catalog-item__content {
     margin-top: auto;
     padding: 0 15px;
-    padding-bottom: 50px; }
+    padding-bottom: 43px; }
   .catalog-item__name {
     position: relative;
     display: block;
@@ -7166,10 +7296,9 @@ table {
         -ms-flex-align: start;
             align-items: flex-start;
     -ms-flex-wrap: no-wrap;
-        flex-wrap: no-wrap;
-    width: calc((100% - 65px) / 2); }
+        flex-wrap: no-wrap; }
     .offcanvas-menu__col:not(:last-child) {
-      margin-right: 65px; }
+      margin-right: 96px; }
     .offcanvas-menu__col-name {
       display: block;
       font-size: 1.6rem;
@@ -7177,12 +7306,14 @@ table {
       text-transform: uppercase;
       line-height: 1.25;
       margin-bottom: 20px;
+      white-space: nowrap;
       color: #222; }
     .offcanvas-menu__col-link {
       font-size: 1.8rem;
       line-height: 1.35;
       color: #222;
-      text-decoration: none; }
+      text-decoration: none;
+      white-space: nowrap; }
       .offcanvas-menu__col-link:not(:last-child) {
         margin-bottom: 15px; }
       .offcanvas-menu__col-link:hover {
@@ -7224,7 +7355,7 @@ table {
         font-weight: 600;
         margin-top: 5px; }
       .offcanvas-menu__footer-link:last-child {
-        margin-left: auto; }
+        margin-left: 55px; }
       .offcanvas-menu__footer-link:hover {
         opacity: .85; }
   .offcanvas-menu_opened {

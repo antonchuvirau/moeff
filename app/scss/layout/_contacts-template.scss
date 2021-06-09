@@ -1,0 +1,38 @@
+.contacts-template {
+    &__col {
+        &-name {
+            display: block;
+            margin: 0;
+            font-size: 1.8rem;
+            font-weight: bold;
+            color: $dark;
+            letter-spacing: .05em;
+            line-height: 1.35;
+            margin-bottom: 20px;
+        }
+    }
+    &__form {
+        padding: 30px;
+        padding-bottom: 40px;
+        background: rgba($secondary, .5);
+        border-radius: 2px;
+    }
+}
+
+// MEDIA
+@media screen and (max-width: 991px) {
+    .contacts-template {
+        &__col {
+            &:not(:last-child) {
+                margin-bottom: 45px;
+            }
+        }
+    }
+}
+@media screen and (max-width: 575px) {
+    .contacts-template {
+        &__form {
+            padding: 30px 15px;
+        }
+    }
+}
