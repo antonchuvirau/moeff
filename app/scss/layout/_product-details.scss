@@ -2,7 +2,7 @@
     @include flex();
     &__media {
         width: 450px;
-        flex-basis: 450px;
+        flex: 1 0 450px;
         margin-right: 30px;
     }
     &__info {
@@ -60,7 +60,7 @@
             max-height: 100%;
         }
         &-pagination {
-            bottom: 20px;
+            bottom: 10px;
             left: 0;
             width: 100%;
             & .swiper-pagination-bullet {
@@ -108,7 +108,7 @@
 }
 
 // MEDIA
-@media screen and (max-width: 1199px) {
+@media screen and (max-width: 1229px) {
     .product-details {
         flex-direction: column;
         &__media {
