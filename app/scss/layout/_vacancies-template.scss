@@ -1,0 +1,13 @@
+.vacancies-template {
+    &__content {
+        &-note {
+            margin-top: 25px;
+            & p {
+                margin: 0;
+                font-size: 1.6rem;
+                line-height: 1.75;
+                color: $dark;
+            }
+        }
+    }
+}

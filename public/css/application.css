@@ -5457,6 +5457,17 @@ table {
     .news-section__item:not(:last-child) {
       margin-right: 15px; } }
 
+.template__desc:not(:last-child) {
+  margin-bottom: 50px; }
+
+.template__desc p {
+  margin: 0;
+  font-size: 1.6rem;
+  line-height: 1.75;
+  color: #444; }
+  .template__desc p:not(:last-child) {
+    margin-bottom: 20px; }
+
 .template__wrapper {
   padding: 25px 0;
   padding-bottom: 70px;
@@ -6368,6 +6379,21 @@ table {
     margin-bottom: 20px; }
   .contacts-info__section p, .contacts-info__section a {
     font-size: 1.5rem; } }
+
+.news-template__col:not(:last-child) {
+  margin-bottom: 55px; }
+
+@media screen and (max-width: 575px) {
+  .news-template__col:not(:last-child) {
+    margin-bottom: 35px; } }
+
+.vacancies-template__content-note {
+  margin-top: 25px; }
+  .vacancies-template__content-note p {
+    margin: 0;
+    font-size: 1.6rem;
+    line-height: 1.75;
+    color: #222; }
 
 .button {
   display: inline-block;
@@ -7467,3 +7493,55 @@ table {
     right: 5px;
     background: url("../img/icons/icon-close.svg") no-repeat 50%/12px auto;
     z-index: 1; }
+
+.vacancy-item__section:not(:last-child) {
+  margin-bottom: 40px; }
+
+.vacancy-item__section-title {
+  display: block;
+  font-size: 1.6rem;
+  line-height: 1.45;
+  font-weight: 600;
+  color: #222; }
+  .vacancy-item__section-title:not(:last-child) {
+    margin-bottom: 15px; }
+
+.vacancy-item__section-desc {
+  margin: 0;
+  font-size: 1.6rem;
+  line-height: 1.45;
+  color: #222;
+  max-width: 680px; }
+  .vacancy-item__section-desc:not(:last-child) {
+    margin-bottom: 15px; }
+
+.vacancy-item__section ul {
+  margin: 0;
+  padding: 0;
+  margin-left: 20px;
+  padding-left: 20px;
+  list-style-type: none; }
+  .vacancy-item__section ul li {
+    position: relative;
+    font-size: 1.6rem;
+    color: #222;
+    line-height: 1.45; }
+    .vacancy-item__section ul li:not(:last-child) {
+      margin-bottom: 5px; }
+    .vacancy-item__section ul li::before {
+      content: '';
+      position: absolute;
+      width: 8px;
+      height: 8px;
+      background: #E2000F;
+      border-radius: 50%;
+      left: -25px;
+      top: 9px; }
+
+.vacancy-item__title {
+  display: block;
+  font-size: 2.2rem;
+  color: #222;
+  line-height: 1.45;
+  margin-bottom: 20px;
+  font-weight: bold; }

@@ -1,4 +1,18 @@
 .template {
+    &__desc {
+        &:not(:last-child) {
+            margin-bottom: 50px;
+        }
+        & p {
+            margin: 0;
+            font-size: 1.6rem;
+            line-height: 1.75;
+            color: $black;
+            &:not(:last-child) {
+                margin-bottom: 20px;
+            }
+        }
+    }
     &__wrapper {
         padding: 25px 0;
         padding-bottom: 70px;

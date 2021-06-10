@@ -69,7 +69,9 @@
   'layout/form',
   'layout/mobile-sidebar',
   'layout/contacts-template',
-  'layout/contacts-info';
+  'layout/contacts-info',
+  'layout/news-template',
+  'layout/vacancies-template';
 
 // 5. Components
 @import
@@ -86,7 +88,8 @@
   'components/basket-product',
   'components/quantity',
   'components/offcanvas-menu',
-  'components/search-box';
+  'components/search-box',
+  'components/vacancy-item';
 
 // 6. Page-specific styles
 @import
