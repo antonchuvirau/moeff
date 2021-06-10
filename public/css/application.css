@@ -5048,6 +5048,8 @@ table {
     padding: 25px 0; }
   .header__logo {
     display: block; }
+    .header__logo-img {
+      max-width: 200px; }
   .header__grid {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -5576,6 +5578,7 @@ table {
   .template__download-catalog-icon {
     -ms-flex-negative: 0;
         flex-shrink: 0;
+    width: 100%;
     max-width: 60px;
     max-height: 60px; }
   .template__download-catalog:hover {
@@ -5653,6 +5656,11 @@ table {
   .template__pagination {
     margin-bottom: 30px; } }
 
+@media screen and (max-width: 767px) {
+  .template__download-catalog-icon {
+    max-width: 30px;
+    max-height: 30px; } }
+
 @media screen and (max-width: 575px) {
   .template__title {
     font-size: 2rem; }
@@ -5675,9 +5683,6 @@ table {
     padding-left: 10px; }
     .template__download-catalog:not(:last-child) {
       margin-right: 15px; }
-    .template__download-catalog-icon {
-      max-width: 30px;
-      max-height: 30px; }
     .template__download-catalog-name {
       font-size: 1.1rem;
       margin-left: 8px; }
@@ -7230,7 +7235,7 @@ table {
   top: 107px;
   right: 0;
   width: 100%;
-  max-width: 59.65vw;
+  max-width: calc(545px + ((100vw - 1170px) / 2));
   height: calc(100vh - 107px);
   background: #EEF4F7;
   -webkit-transform: translate3d(100%, 0, 0);
@@ -7263,8 +7268,7 @@ table {
       padding-left: 45px; }
   .offcanvas-menu__wrapper {
     padding: 55px calc((100vw - 1170px) / 2);
-    padding-left: 75px;
-    padding-left: 100px; }
+    padding-left: 75px; }
   .offcanvas-menu__container {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -7362,6 +7366,10 @@ table {
     -webkit-transform: none;
         -ms-transform: none;
             transform: none; }
+
+@media screen and (min-width: 992px) and (max-width: 1229px) {
+  .offcanvas-menu {
+    max-width: calc(545px + ((100vw - 930px) / 2)); } }
 
 @media screen and (max-width: 1199px) {
   .offcanvas-menu__wrapper {

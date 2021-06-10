@@ -87,6 +87,7 @@
         }
         &-icon {
             flex-shrink: 0;
+            width: 100%;
             max-width: 60px;
             max-height: 60px;
         }
@@ -180,6 +181,16 @@
         }
     }
 }
+@media screen and (max-width: 767px) {
+    .template {
+        &__download-catalog {
+            &-icon {
+                max-width: 30px;
+                max-height: 30px;
+            }
+        }
+    }
+}
 @media screen and (max-width: 575px) {
     .template {
         &__title {
@@ -215,10 +226,6 @@
             padding-left: 10px;
             &:not(:last-child) {
                 margin-right: 15px;
-            }
-            &-icon {
-                max-width: 30px;
-                max-height: 30px;
             }
             &-name {
                 font-size: 1.1rem;

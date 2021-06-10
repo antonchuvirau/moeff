@@ -5,6 +5,9 @@
     }
     &__logo {
         display: block;
+        &-img {
+            max-width: 200px;
+        }
     }
     &__grid {
         @include flex(row, center, flex-end);
