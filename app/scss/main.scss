@@ -43,7 +43,8 @@
 @import
   'vendors/normalize',
   'vendors/swiperjs',
-  'vendors/fancyapp';
+  'vendors/fancyapp',
+  'vendors/jquerymodal';
 
 // 3. Base stuff
 @import
@@ -90,7 +91,8 @@
   'components/quantity',
   'components/offcanvas-menu',
   'components/search-box',
-  'components/vacancy-item';
+  'components/vacancy-item',
+  'components/modal';
 
 // 6. Page-specific styles
 @import

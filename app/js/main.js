@@ -79,3 +79,11 @@ document.addEventListener(`DOMContentLoaded`, () => {
         mobileSidebarOpenButton.addEventListener(`change`, onMobileSidebarOpenButtonChangeHandler);
     }
 });
+
+// JQUERY
+// jQuery.ready(function() {
+//     jQuery('a[data-modal]').on('click', function() {
+//         jQuery(this).modal();
+//         return false;
+//     });
+// });

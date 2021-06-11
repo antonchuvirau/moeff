@@ -1,0 +1,35 @@
+.modal {
+    border-radius: 2px;
+    background: $secondary-100;
+    max-width: 350px;
+    box-shadow: 0 3px 20px 0 rgba($dark, .15);
+    padding: 0;
+    width: 100%;
+    &__wrapper {
+        padding: 25px 30px;
+    }
+    & a.close-modal {
+        width: 25px;
+        height: 25px;
+        background: icon('icon-close.svg') no-repeat 50% / 12px auto;
+        top: 24px;
+        right: 10px;
+        z-index: 1;
+    }
+    &__title {
+        display: block;
+        font-size: 1.8rem;
+        font-weight: bold;
+        color: $dark;
+        line-height: 1.35;
+        letter-spacing: .05em;
+        margin-bottom: 15px;
+    }
+    &__button {
+        width: 100%;
+    }
+}
+.blocker {
+    background: rgba($dark, .35);
+    z-index: 9999;
+}

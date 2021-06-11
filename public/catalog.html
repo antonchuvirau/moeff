@@ -138,7 +138,7 @@
                                         <img class="template__download-catalog-icon" src="img/icons/icon-pdf.svg" alt="alt">
                                         <span class="template__download-catalog-name">Скачать каталог продукции MOEFF</span>
                                     </a>
-                                    <a href="#" class="template__download-catalog">
+                                    <a href="#callback-modal" rel="modal:open" class="template__download-catalog">
                                         <img class="template__download-catalog-icon" src="img/icons/icon-mail.svg" alt="alt">
                                         <span class="template__download-catalog-name">Обратная связь<span>Отправить заявку</span></span>
                                     </a>
@@ -213,7 +213,7 @@
                                             <img class="template__download-catalog-icon" src="img/icons/icon-pdf-mobile.svg" alt="alt">
                                             <span class="template__download-catalog-name">Скачать каталог продукции MOEFF</span>
                                         </a>
-                                        <a href="#" class="template__download-catalog">
+                                        <a href="#callback-modal" rel="modal:open" class="template__download-catalog">
                                             <img class="template__download-catalog-icon" src="img/icons/icon-mail-mobile.svg" alt="alt">
                                             <span class="template__download-catalog-name">Обратная связь<span>Отправить заявку</span></span>
                                         </a>
@@ -345,7 +345,43 @@
     </div>
     <!-- END search modal -->
     <!-- BEGIN modal -->
-    
+    <div id="callback-modal" class="modal callback-modal">
+        <div class="modal__wrapper">
+            <span class="modal__title">Обратная связь</span>
+            <div class="modal__grid">
+                <form class="form">
+                    <div class="form__grid">
+                        <div class="form__row">
+                            <div class="form__field">
+                                <label for="name" class="form__field-label">Ф.И.О получателя:</label>
+                                <input type="text" id="name" name="name" class="form__input">
+                            </div>
+                        </div>
+                        <div class="form__row">
+                            <div class="form__field">
+                                <label for="email" class="form__field-label">E-mail:</label>
+                                <input type="email" id="email" name="email" class="form__input">
+                            </div>
+                        </div>
+                        <div class="form__row">
+                            <div class="form__field">
+                                <label for="tel" class="form__field-label">Контактный телефон:</label>
+                                <input type="tel" id="tel" name="tel" placeholder="+7 (926) 123-45-67" class="form__input">
+                            </div>
+                        </div>
+                        <div class="form__row">
+                            <div class="form__field">
+                                <label for="message" class="form__field-label">Текст сообщения:</label>
+                                <textarea name="message" id="message" class="form__input form__textarea"></textarea>
+                            </div>
+                        </div>
+                        <p class="form__privacy">Нажимая кнопку «Оформить заказ», вы соглашаетесь с правилами обработки <a href="#">«Персональных данных»</a></p>
+                        <button type="submit" class="button button_filled button_size-m form__button modal__button">Оформить заказ</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
     <!-- END modal -->
     <!-- BEGIN scripts -->
     <script src="js/application.js"></script>
