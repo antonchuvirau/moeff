@@ -5701,6 +5701,13 @@ table {
     height: 80vw;
     max-height: 460px; } }
 
+@media screen and (max-width: 413px) {
+  .template__download-catalog {
+    padding: 15px 10px; }
+    .template__download-catalog-name {
+      font-size: 1rem;
+      margin-left: 5px; } }
+
 .catalog-template__item {
   height: 100%; }
 
