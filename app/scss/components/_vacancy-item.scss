@@ -33,7 +33,7 @@
                 position: relative;
                 font-size: 1.6rem;
                 color: $dark;
-                line-height: 1.45;
+                line-height: 1.75;
                 &:not(:last-child) {
                     margin-bottom: 5px;
                 }
@@ -57,5 +57,24 @@
         line-height: 1.45;
         margin-bottom: 20px;
         font-weight: bold;
+    }
+}
+
+// MEDIA
+@media screen and (max-width: 575px) {
+    .vacancy-item {
+        &__section {
+            & a {
+                font-size: 1.4rem;
+            }
+            & p {
+                font-size: 1.4rem;
+            }
+            & ul, ol {
+                & li {
+                    font-size: 1.4rem;
+                }
+            }
+        }
     }
 }

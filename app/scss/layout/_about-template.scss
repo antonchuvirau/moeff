@@ -1,4 +1,5 @@
 .about-template {
+    min-height: 60vh;
     &__title {
         max-width: 800px;
         margin-bottom: 35px;
@@ -54,6 +55,7 @@
         & img {
             display: block;
             width: 100%;
+            height: 100%;
             max-width: 100%;
         }
     }

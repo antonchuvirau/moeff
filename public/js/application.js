@@ -86,10 +86,10 @@ document.addEventListener(`DOMContentLoaded`, () => {
     }
     if (productGalleryElement) {
         new Swiper(productGalleryElement, {
-            pagination: {
-                el: productGalleryElement.nextElementSibling,
-                clickable: true
-            },
+            // pagination: {
+            //     el: productGalleryElement.nextElementSibling,
+            //     clickable: true
+            // },
             thumbs: {
                 swiper: {
                     el: productThumbsElement,

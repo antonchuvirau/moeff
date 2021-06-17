@@ -10,9 +10,6 @@
         color: $black;
         margin: 0 3px;
         white-space: nowrap;
-        max-width: 135px;
-        overflow: hidden;
-        text-overflow: ellipsis;
         &:first-child {
             margin-left: 0;
         }
@@ -28,6 +25,15 @@
 }
 
 // MEDIA
+@media screen and (max-width: 767px) {
+    .breadcrumbs {
+        &__link {
+            max-width: 135px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+    }
+}
 @media screen and (max-width: 575px) {
     .breadcrumbs {
         &__link {

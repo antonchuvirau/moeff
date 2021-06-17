@@ -1,0 +1,120 @@
+@media print and (min-width: 320px) {
+    .header__button {
+        display: none;
+    }
+    .d-lg-flex {
+        display: flex !important;
+    }
+    .button {
+        display: none;
+    }
+    .product-template__link {
+        display: none;
+    }
+    section.main__section {
+        display: none;
+    }
+    footer.footer {
+        display: none;
+    }
+    .product-details {
+        display: block !important;
+        flex: none !important;
+        &__thumbs {
+            display: none !important;
+        }
+        &__media {
+            display: block !important;
+            flex: none !important;
+            width: 100% !important;
+            height: 150px !important;
+        }
+        &__gallery {
+            width: 100% !important;
+            height: 100% !important;
+            max-height: 150px !important;
+            & .swiper-wrapper {
+                width: 100% !important;
+                height: 100% !important;
+                max-height: 150px !important;
+            }
+            &-box {
+                width: 100% !important;
+                height: 100% !important;
+                max-height: 150px !important;
+            }
+            &-img {
+                width: 150px !important;
+                margin:  0 auto !important;
+                height: auto !important;
+                max-height: 150px !important;
+            }
+            &-slide {
+                display: none !important;
+                width: 100% !important;
+                height: 100% !important;
+                max-height: 150px !important;
+                &:first-child {
+                    display: block !important;
+                }
+            }
+        }
+        &__info {
+            display: block !important;
+            flex: none !important;
+            padding: 30px 15px;
+            margin-top: 20px !important;
+            width: 100% !important;
+            background: rgba($secondary-300, .5) !important;
+            &-list {
+                &-name {
+                    font-size: 1.3rem;
+                    width: 160px;
+                    flex-basis: 160px;
+                }
+                &-value {
+                    font-size: 1.3rem;
+                }
+            }
+        }
+    }
+    .header {
+        &__button {
+            &-search {
+                display: none !important;
+            }
+        }
+        &__link {
+            & + .header {
+                &__link {
+                    margin-right: 0;
+                }
+            }
+        }
+        &__logo {
+            &-img {
+                max-width: 150px;
+            }
+        }
+    }
+    .product-template {
+        &__container {
+            padding: 0;
+            border: none;
+            border-radius: 0;
+        }
+        &__desc {
+            &-title {
+                margin-bottom: 15px;
+            }
+            &-content {
+                & p {
+                    font-size: 1.4rem;
+                }
+            }
+        }
+        &__link {
+            font-size: 1.3rem;
+        }
+    }
+}

@@ -158,6 +158,11 @@
 }
 @media screen and (max-width: 575px) {
     .header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 999;
         &__button {
             margin-right: 35px;
             &-menu {

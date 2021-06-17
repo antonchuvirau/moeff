@@ -137,12 +137,12 @@
         }
         & a {
             font-size: 1.6rem;
-            color: $black;
+            color: $dark;
             line-height: 1.75;
         }
         & p {
             font-size: 1.6rem;
-            color: $black;
+            color: $dark;
             line-height: 1.75;
             margin: 0;
             &:not(:last-child) {
@@ -155,7 +155,7 @@
             }
             & li {
                 font-size: 1.6rem;
-                color: $black;
+                color: $dark;
                 line-height: 1.75;
                 &:not(:last-child) {
                     margin-bottom: 5px;
@@ -246,10 +246,10 @@
                 margin-left: 8px;
             }
         }
-    }
-    &__map {
-        height: 80vw;
-        max-height: 460px;
+        &__map {
+            height: 80vw;
+            max-height: 460px;
+        }
     }
 }
 @media screen and (max-width: 413px) {

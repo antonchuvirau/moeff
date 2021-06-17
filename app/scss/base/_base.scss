@@ -35,6 +35,11 @@ body {
     height: 100%;
     background: $white;
 }
+@media screen and (max-width: 575px) {
+    body {
+        padding-top: 65px;
+    }
+}
 button {
     @include font();
     -webkit-appearance: none;

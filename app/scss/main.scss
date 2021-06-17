@@ -73,7 +73,8 @@
   'layout/contacts-info',
   'layout/news-template',
   'layout/vacancies-template',
-  'layout/article-template';
+  'layout/article-template',
+  'layout/certificates-list';
 
 // 5. Components
 @import
@@ -100,4 +101,5 @@
 
 // 7. Themes
 @import
-  'themes/default';
+  'themes/default',
+  'themes/print';
