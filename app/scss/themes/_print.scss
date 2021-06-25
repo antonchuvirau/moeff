@@ -75,6 +75,11 @@
                 &-value {
                     font-size: 1.3rem;
                 }
+                &-item {
+                    &:not(:last-child) {
+                        margin-bottom: 10px;
+                    }
+                }
             }
         }
     }
@@ -116,5 +121,8 @@
         &__link {
             font-size: 1.3rem;
         }
+    }
+    .offcanvas-menu {
+        display: none !important;
     }
 }

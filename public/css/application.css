@@ -7880,6 +7880,8 @@ table {
             flex-basis: 160px; }
       .product-details__info-list-value {
         font-size: 1.3rem; }
+      .product-details__info-list-item:not(:last-child) {
+        margin-bottom: 10px; }
   .header__button-search {
     display: none !important; }
   .header__link + .header__link {
@@ -7895,4 +7897,6 @@ table {
   .product-template__desc-content p {
     font-size: 1.4rem; }
   .product-template__link {
-    font-size: 1.3rem; } }
+    font-size: 1.3rem; }
+  .offcanvas-menu {
+    display: none !important; } }
