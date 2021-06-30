@@ -6671,8 +6671,8 @@ table {
   background: -webkit-gradient(linear, right top, left top, from(#e2000f), to(#7c020c));
   background: -o-linear-gradient(right, #e2000f 0%, #7c020c 100%);
   background: linear-gradient(to left, #e2000f 0%, #7c020c 100%);
-  padding: 90px 0;
-  padding-bottom: 75px; }
+  padding: 55px 0;
+  padding-bottom: 65px; }
 
 .hero__content {
   width: 55.9%; }
@@ -6698,11 +6698,11 @@ table {
     left: 0; }
 
 .hero__title {
-  font-size: 3.2rem;
+  font-size: 2.8rem;
   color: #fff;
   text-transform: uppercase;
   margin: 0;
-  line-height: 1.55;
+  line-height: 1.6;
   letter-spacing: .1em;
   font-weight: 900;
   margin-bottom: 40px;
@@ -6717,7 +6717,7 @@ table {
     color: #fff; }
 
 .hero__button {
-  margin-top: 55px; }
+  margin-top: 50px; }
 
 @media screen and (max-width: 991px) {
   .hero__wrapper {
